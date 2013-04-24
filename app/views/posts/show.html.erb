@@ -1,0 +1,21 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Title:</b>
+  <%= @post.title %>
+</p>
+
+<p>
+	<b>Author:</b>
+	<%= @post.user.email %>
+</p>
+
+<p>
+  <b>Content:</b>
+  <%= @post.content %>
+</p>
+
+<% if user_signed_in? %>
+<!--<%= link_to 'Edit', edit_post_path(@post) %> |-->
+<% end %>
+<%= link_to 'Back', posts_path %>

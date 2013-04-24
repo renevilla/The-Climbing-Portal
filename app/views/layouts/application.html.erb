@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>TheClimbingPortal</title>
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+	<!-- <p class="notice"><%= notice %></p>
+	<p class="alert"><%= alert %></p> -->
+
+	<div class="container">
+      <div class="navbar">
+        <li class="<%= 'active' if params[:controller] == 'homepage_controller' %>"><a href="/homepage"><h3>The Climbing Portal</h3></a></li> 
+            <div class="navbar-inner">
+              <ul>
+                <li class="<%= 'active' if params[:controller] == 'destinations_controller' %>"><a href="/destinations">Destinations</a></li>  
+                <li class="<%= 'active' if params[:controller] == 'gyms_controller' %>"><a href="/gyms">Gyms</a></li>
+                <li><%= link_to 'Forum', posts_path %></li>
+                <li> <% if user_signed_in? %>
+                  <%= link_to "Sign out", destroy_user_session_path, method: :delete %>
+                  <% else %>
+                  <%= link_to "Sign in", new_user_session_path %>
+                  <% end %>
+                </li>
+              </ul>
+            </div>  
+      </div>
+    </div>
+	
+<%= yield %>
+
+
+<div id="footer">
+	      <div class="container">
+	        <p class="muted credit">© The Climbing Portal 2013 | Climbing is dangerous. Climb at your own risk.</p>
+	      </div>
+	 </div>
+</body>
+</html>

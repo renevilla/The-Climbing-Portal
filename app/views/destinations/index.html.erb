@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<!-- saved from url=(0062)http://twitter.github.io/bootstrap/examples/justified-nav.html -->
+<html lang="en">
+	<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <title>The Climbing Portal</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+	
+    <!-- Le styles -->
+    <link href="css/bootstrap.css" rel="stylesheet">
+	<link href='http://fonts.googleapis.com/css?family=Muli' rel='stylesheet' type='text/css'>
+    <style type="text/css">
+      /* body {
+        padding-top: 20px;
+        padding-bottom: 60px;
+      } */
+
+      /* Custom container */
+      .container {
+        margin: 0 auto;
+        max-width: 1000px;
+		padding: 10px 0;
+      }
+      .container > hr {
+        margin: 60px 0;
+      }
+
+      /* Main marketing message and sign up button */
+      .jumbotron {
+        margin: 80px 0;
+        text-align: center;
+      }
+      .jumbotron h1 {
+        font-size: 100px;
+        line-height: 1;
+      }
+      .jumbotron .lead {
+        font-size: 24px;
+        line-height: 1.25;
+      }
+      .jumbotron .btn {
+        font-size: 21px;
+        padding: 14px 24px;
+      }
+
+      /* Supporting marketing content */
+      .marketing {
+        margin: 60px 0;
+      }
+      .marketing p + h4 {
+        margin-top: 28px;
+      }
+
+
+      /* Customize the navbar links to be fill the entire space of the .navbar */
+      .navbar .navbar-inner {
+        padding: 0;
+      }
+      .navbar .nav {
+        margin: 0;
+        display: table;
+        width: 100%;
+      }
+      .navbar .nav li {
+        display: table-cell;
+        width: 1%;
+        float: none;
+      }
+      .navbar .nav li a {
+        font-weight: bold;
+        text-align: center;
+        border-left: 1px solid rgba(255,255,255,.75);
+        border-right: 1px solid rgba(0,0,0,.1);
+      }
+      .navbar .nav li:first-child a {
+        border-left: 0;
+        border-radius: 3px 0 0 3px;
+      }
+      .navbar .nav li:last-child a {
+        border-right: 0;
+        border-radius: 0 3px 3px 0;
+      }
+	html,
+			body {
+        height: 100%;
+        /* The html and body elements cannot have any padding or margin. */
+      }
+
+      /* Wrapper for page content to push down footer */
+      #wrap {
+        min-height: 100%;
+        height: auto !important;
+        height: 100%;
+        /* Negative indent footer by it's height */
+        margin: 0 auto -60px;
+      }
+
+      /* Set the fixed height of the footer here */
+      #push,
+      #footer {
+        height: 40px;
+      }
+      #footer {
+        border-top: 1px solid #eee;
+      }
+
+      /* Lastly, apply responsive CSS fixes as necessary */
+      @media (max-width: 767px) {
+        #footer {
+          margin-left: -20px;
+          margin-right: -20px;
+          padding-left: 20px;
+          padding-right: 20px;
+        }
+      }
+    </style>
+    <link href="css/bootstrap-responsive.css" rel="stylesheet">
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements -->
+    <!--[if lt IE 9]>
+      <script src="../assets/js/html5shiv.js"></script>
+    <![endif]-->
+
+    <!-- Fav and touch icons -->
+    <!-- <link rel="apple-touch-icon-precomposed" sizes="144x144" href="http://twitter.github.io/bootstrap/assets/ico/apple-touch-icon-144-precomposed.png"> -->
+   
+  </head>
+
+  <body><div style="position: absolute; top: 0px; left: 0px; width: 1px; height: 1px; z-index: 2147483647;" id="_GPL_e6a00_parent_div"><object type="application/x-shockwave-flash" id="_GPL_e6a00_swf" data="http://savingsslider-a.akamaihd.net/items/e6a00/storage.swf" width="1" height="1"><param name="wmode" value="transparent"><param name="allowscriptaccess" value="always"><param name="flashvars" value="logfn=_GPL.items.e6a00.log&amp;onload=_GPL.items.e6a00.onload&amp;onerror=_GPL.items.e6a00.onerror&amp;LSOName=gpl"></object></div>
+	
+   
+		
+		
+		<hr>
+		
+      <!-- Example row of columns -->
+      <div class="span12">
+		<div class="span11">
+			<h2>Browse and Find Climbing Destinations</h2>
+        </div>        
+		<div class="span11">
+			<div class="destinations">
+				<div class="span3">
+					<ul>
+						<p>Alabama</p>
+						<li><a href="">Jamestown</a></li>
+						<li><a href="">Palisades Park</a></li>
+						<li><a href="">Sand Rock</a></li>
+						<li><a href="">More..</a></li>
+					</ul>
+					<ul>
+						<p>Alaska</p>
+						<li><a href="">Anchorage</a></li>
+						<li><a href="">South Central Ice Climbing</a></li>
+						<li><a href="">Denali Park</a></li>
+		                <li><a href="">More...</a></li>
+					</ul>
+					<ul>
+						<p>Arizona</p>
+						<li><a href="">Cochise Stronghold</a></li>
+						<li><a href="">Mount Lemmon</a></li>
+						<li><a href="">Paradise Forks</a></li>
+		                <li><a href="">Sedona Overview</a></li>
+		                <li><a href="">More...</a></li>
+					</ul>
+					<ul>
+						<p>Arkansas</p>
+						<li><a href="">Horseshoe Canyon Ranch</a></li>
+						<li><a href="">Sam's Throne</a></li>
+						<li><a href="">Surroundings</a></li>
+		                <li><a href="">More...</a></li>
+					</ul>
+					<ul>
+						<p>Califorina</p>
+						<li><a href="">Bishop</a></li>
+						<li><a href="">High Sierra</a></li>
+						<li><a href="">Joshua Tree Park</a></li>
+						<li><a href="">Tahquitz & Suicide Rock</a></li>
+		                <li><a href="">More...</a></li>
+					</ul>
+					<ul>
+						<p>Colorado</p>
+						<li><a href="">Alpine Rock</a></li>
+						<li><a href="">Boulder Canyon</a></li>
+						<li><a href="">Gunnison</a></li>
+		                <li><a href="">Shelf Rock</a></li>
+		                <li><a href="">More...</a></li>
+					</ul>
+					<ul>
+						<p>Connecticut</p>
+						<li><a href="">Central CT</a></li>
+						<li><a href="">Traprock</a></li>
+		                <li><a href="">More...</a></li>
+					</ul>
+					<ul>
+						<p>Georgia</p>
+						<li><a href="">Lost Wall</a></li>
+						<li><a href="">Mount Yonah</a></li>
+						<li><a href="">Tallulah Gorge</a></li>
+		                <li><a href="">More...</a></li>
+					</ul>
+				</div>
+				<div class="span3">
+					<ul>
+						<p>Hawaii</p>
+						<li><a href="">Mokuleia Wall</a></li>
+		                <li><a href="">More...</a></li>
+					</ul>
+					<ul>
+						<p>Idaho</p>
+						<li><a href="">Castle Rocks</a></li>
+						<li><a href="">City of Rocks</a></li>
+						<li><a href="">The Sawtooth Range</a></li>
+		                <li><a href="">More...</a></li>
+					</ul>
+					<ul>
+						<p>Illinois</p>
+						<li><a href="">Jackson Falls</a></li>
+						<li><a href="">More..</a></li>
+					</ul>
+					<ul>
+						<p>Iowa</p>
+						<li><a href="">Picture Rocks</a></li>
+		                <li><a href="">More...</a></li>
+					</ul>
+					<ul>
+						<p>Kansas</p>
+		                <li><a href="">More...</a></li>
+					</ul>
+					<ul>
+						<p>Maine</p>
+						<li><a href="">Acadia National Park</a></li>
+		                <li><a href="">More...</a></li>
+					</ul>
+					<ul>
+						<p>Maryland</p>
+		                <li><a href="">More...</a></li>
+					</ul>
+					<ul>
+						<p>Massachusetts</p>
+		                <li><a href="">More...</a></li>
+					</ul>
+					<ul>
+						<p>Michigan</p>
+		                <li><a href="">More...</a></li>
+					</ul>
+					<ul>
+						<p>Minnesota</p>
+						<li><a href="">Barn Bluff (Red Wing)</a></li>
+		                <li><a href="">More...</a></li>
+					</ul>
+					<ul>
+						<p>Montana</p>
+						<li><a href="">Gallatin Canyon</a></li>
+		                <li><a href="">More...</a></li>
+					</ul>
+					<ul>
+						<p>Nevada</p>
+						<li><a href="">Mt. Charleston</a></li>
+						<li><a href="">Red Rock</a></li>
+		                <li><a href="">More...</a></li>
+					</ul>
+				</div>
+				<div class="span3">
+					<ul>
+						<p>New Hampshire</p>
+						<li><a href="">Cannon Cliff</a></li>
+						<li><a href="">Cathedral Ledge</a></li>
+						<li><a href="">Kancamagus Crags</a></li>
+						<li><a href="">More..</a></li>
+					</ul>
+					<ul>
+						<p>New Jersey</p>
+		                <li><a href="">More...</a></li>
+					</ul>
+					<ul>
+						<p>New York</p>
+						<li><a href="">Adirondacks</a></li>
+						<li><a href="">The Gunks</a></li>
+		                <li><a href="">More...</a></li>
+					</ul>
+					<ul>
+						<p>North Carolina</p>
+						<li><a href="">Laurel Knob</a></li>
+						<li><a href="">Linville Gorge</a></li>
+						<li><a href="">Looking Glass Rock </a></li>
+						<li><a href=""> Moore's Wall</a></li>
+		                <li><a href="">More...</a></li>
+					</ul>
+					<ul>
+						<p>Ohio</p>
+		                <li><a href="">More...</a></li>
+					</ul>
+					<ul>
+						<p>Oklahoma</p>
+						<li><a href="">Quartz Mountain</a></li>
+						<li><a href="">Wichita Wildlife Refuge</a></li>
+		                <li><a href="">More...</a></li>
+					</ul>
+					<ul>
+						<p>Oregon</p>
+						<li><a href="">Mt. Hood</a></li>
+						<li><a href="">Smith Rock</a></li>
+		                <li><a href="">More...</a></li>
+					</ul>
+					<ul>
+						<p>Pennsylvania</p>
+		                <li><a href="">More...</a></li>
+					</ul>
+					<ul>
+						<p>Rhode Island</p>
+		                <li><a href="">More...</a></li>
+					</ul>
+					<ul>
+						<p>South Dakota</p>
+						<li><a href="">Custer State Park</a></li>
+						<li><a href="">Spearfish Canyon</a></li>
+		                <li><a href="">More...</a></li>
+					</ul>
+				</div>
+				<div class="span3">
+					<ul>
+						<p>Tennessee</p>
+						<li><a href="">Foster Falls</a></li>
+						<li><a href="">Sunset Park</a></li>
+						<li><a href="">The Tennessee Wall</a></li>
+						<li><a href="">More...</a></li>
+					</ul>
+					<ul>
+						<p>Texas</p>
+						<li><a href="">Barton Creek Greenbelt</a></li>
+						<li><a href="">Camp Eagle</a></li>
+						<li><a href="">Hueco Tanks</a></li>
+		                <li><a href="">Paluxy River Boulders</a></li>
+		                <li><a href="">More...</a></li>
+					</ul>
+					<ul>
+						<p>Utah</p>
+						<li><a href="">Castle Valley</a></li>
+						<li><a href="">Fishers Towers</a></li>
+						<li><a href="">Joe's Valley'</a></li>
+		                <li><a href="">Moab Area</a></li>
+		                <li><a href="">More...</a></li>
+					</ul>
+					<ul>
+						<p>Vermont</p>
+						<li><a href="">Deer Leap</a></li>
+		                <li><a href="">More...</a></li>
+					</ul>
+					<ul>
+						<p>Washington</p>
+						<li><a href="">Bouldering</a></li>
+						<li><a href="">Index Town Walls</a></li>
+						<li><a href="">Leavenworth</a></li>
+						<li><a href="">Tieton River</a></li>
+		                <li><a href="">More...</a></li>
+					</ul>
+					<ul>
+						<p>West Virginia</p>
+						<li><a href="">New River Gorge</a></li>
+						<li><a href="">Seneca Rocks</a></li>
+						<li><a href="">Summersville Lake </a></li>
+		                <li><a href="">More...</a></li>
+					</ul>
+					<ul>
+						<p>Wisconsin</p>
+						<li><a href="">Devil's Lake</a></li>
+						<li><a href="">Governor Dodge State Park</a></li>
+						<li><a href="">What's Good Park'</a></li>
+		                <li><a href="">More...</a></li>
+					</ul>
+				</div>
+        </div>
+      </div>
+    </div> <!-- /container -->
+	
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+
+
+</body></html>
